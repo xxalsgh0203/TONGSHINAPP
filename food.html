@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>53div</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+  a:link
+  {
+    color:tomato;
+  }
+  a:visited
+  {
+    color:tomato;
+  }
+p{
+  font-size:2.0rem;
+  font-family: 'Nanum Pen Script', cursive;;
+  line-height: 1.4;
+  }
+h1{font-family: 'Nanum Pen Script', cursive;}
+  </style>
+</head>
+<body style="text-align: center">
+  <h1><a href="main.html">명품 통신대대</a></h1>
+  <li class="list"><a href="main.html">칠판</a></li>
+  <li class="list"><a href="food.html">식단표</a></li>
+  <img src="tongshin.jpg" cellspacing=70 cellpadding=20 width="50%">
+  <script language="javascript">
+  function showClock()
+  {
+    var currentDate = new Date();
+    var divClock = document.getElementById("divClock");
+
+    var msg = "현재 시간:"+currentDate.getHours()+"시"
+    msg += currentDate.getMinutes()+"분";
+    msg += currentDate.getSeconds()+"초";
+
+    divClock.innerText = msg;
+    setTimeout(showClock,1000);
+  }
+  </script>
+
+</body>
