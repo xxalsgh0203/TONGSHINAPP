@@ -46,6 +46,11 @@
   {
     margin-top: 70px;
   }
+  .bg-light
+  {
+    color: Darkgrey;
+  }
+
   @media screen and (max-width: 600px)
   {
     html
@@ -57,21 +62,12 @@
       font-size: 2rem;
     }
   }
-  #btn_group button
-  {
-    border: 1px solid skyblue;
-    background-color: rgba(0,0,0,0);
-    color: skyblue;
-    padding: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: pink;
-  }
+
   </style>
 </head>
 
 <body style="text-align: center">
-  <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-distance">
     <a class="navbar-brand" href="index.html">명품정보통신</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -91,21 +87,17 @@
 
 
 <section class="section1">
-  <img src="tongshin.jpg" cellspacing=70 cellpadding=20 max-width=50% height:auto;>
+  <img src="foodim.png" cellspacing=70 cellpadding=20 width=40% height=35%;>
 </sesction>
 
 <section class="section2">
-  <div id="btn_group">
-    <button id="test_btn1" onclick="location.href='#.html'">간부식당</button>
-    <button id="test_btn2" onclick="location.href='#.html'">병사식당</button>
-  </div>
   <div class="solider_jpg">
     <script language="javascript">
         let today = new Date();
 
         let day = today.getDate();    // 오늘 날짜
 
-        document.write("<img src=\"soldier_" + day + ".jpg\" cellspacing=70 cellpadding=20 max-width=50% height:auto;>");         //img 설정값 변경하기!!
+        document.write("<img src=\"soldier_" + day + ".png\" cellspacing=70 cellpadding=20 max-width=50% height:auto;>");         //img 설정값 변경하기!!
 
     </script>
   </div>
